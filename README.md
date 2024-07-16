@@ -20,3 +20,18 @@
 6. [Contributing](#Contributing)
 7. [License](#License)
 8. [Contact](#Contact)
+
+## Create Functions for Testing
+
+Before we start testing with QUnit, we need to create a few functions to use as our test objects. Follow these steps to write your functions for testing:
+
+### Steps
+
+1. **Create your VS Code folder and file for functions:**
+   - First, create a folder named `function_and_tests`.
+   - Open this folder. Choose `File`, then `Open Folder` from the menu.
+   - Right-click on the `EXPLORER` tab and choose `New File…`.
+
+2. **Create a JS file and name it `test_functions.js`:**
+
+3. **Open the file and write the functions we will test later.**
