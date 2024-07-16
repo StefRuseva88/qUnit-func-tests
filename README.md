@@ -170,3 +170,12 @@ To write tests, we need a test framework. We will install QUnit.
 2. Import the `fakeDelay` function.
 3. Write a test with a delay of 1000 milliseconds.
 4. Execute the test with the command `npm test fakeDelay_tests.js`.
+
+## Contributing
+Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any questions or suggestions open an issue in the repository.
