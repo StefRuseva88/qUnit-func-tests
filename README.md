@@ -161,8 +161,6 @@ To write tests, we need a test framework. We will install QUnit.
 
 ## Asynchronous Testing
 
-### Test "fetchData" Function
-
 1. Create a file named `async_test_functions.js`.
 2. Write two async functions – one for asynchronous fetch and another to simulate an asynchronous delay.
 3. Export these functions.
