@@ -178,4 +178,4 @@ Contributions are welcome! If you have any improvements or bug fixes, feel free 
 This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any questions or suggestions open an issue in the repository.
+For any questions or suggestions, please open an issue in the repository.
