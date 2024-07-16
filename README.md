@@ -104,6 +104,12 @@ To write tests, we need a test framework. We will install QUnit.
 
 ## Write Tests for All Functions
 
+### Test "sum" Function
+1. Create a new file named `sum_tests.js`.
+2. Import the `sum` function.
+3. Write tests to check various cases.
+4. Run tests by executing `npm test sum_tests.js`.
+
 ### Test "isEven" Function
 
 1. Create a new file named `isEven_tests.js`.
