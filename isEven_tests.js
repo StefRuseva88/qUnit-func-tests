@@ -13,7 +13,7 @@ QUnit.module("isEven function testing", () => {
         assert.notOk(isEven(3), "Identifying odd number: 21");
     });
 
-    QUnit.test("Zero as parameter", function(assert) {
+    QUnit.test("Zero as input", function(assert) {
         assert.ok(isEven(0), "Identifying even number: 0");
     });
 })  
