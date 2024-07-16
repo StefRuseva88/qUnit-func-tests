@@ -16,4 +16,8 @@ QUnit.module("isEven function testing", () => {
     QUnit.test("Zero as input", function(assert) {
         assert.ok(isEven(0), "Identifying even number: 0");
     });
+
+    QUnit.test("Negative numbers", function(assert) {
+        assert.ok(isEven(-2), "Identifying negative number: -2");
+    });
 })  
