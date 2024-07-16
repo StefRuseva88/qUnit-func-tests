@@ -17,3 +17,6 @@
 5. [Asynchronous Testing](#Asynchronous-Testing)
 - Test "fetchData" Function
 - Test "fakeDelay" Function
+6. [Contributing](#Contributing)
+7. [License](#License)
+8. [Contact](#Contact)
