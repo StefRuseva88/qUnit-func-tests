@@ -18,8 +18,5 @@ QUnit.module('sum function tests', function () {
         assert.equal(Math.floor(sum(0.1, 0.2) * 10), 3, "Adding floating-point numbers");
     })
 
-    // QUnit.test("Floating point numbers - test fail", function(assert) {
-    //     assert.equal(sum(0.1, 0.2), 3, "Adding floating-point numbers");
-    // })
 })
 
