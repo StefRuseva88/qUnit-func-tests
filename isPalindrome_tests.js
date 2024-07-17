@@ -2,7 +2,7 @@ const { isPalindrome } = require("./test_functions.js");
 
 QUnit.module("isPalindrome function testing", () => {
     QUnit.test("Single palindrome word", function(assert) {
-        assert.ok(isPalindrome("racecar"), "Identifying 'racecar' as a palindrome");
+        assert.ok(isPalindrome("racecar"), "Single palindrome word");
     });
 
     QUnit.test("Pasindrome sentence", function(assert) {
