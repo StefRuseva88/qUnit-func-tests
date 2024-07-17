@@ -2,7 +2,7 @@ const { fibonacci } = require("./test_functions.js");
 
 QUnit.module("fibonacci function testing", () => {
     QUnit.test("Zero parameter", function(assert) {
-        assert.deepEqual(fibonacci(0), [], "Fibonacci sequence with 0 terms");
+        assert.deepEqual(fibonacci(0), [], "Zero as input");
     });
 
     QUnit.test("One as parameter", function(assert) {
