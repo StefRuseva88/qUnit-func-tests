@@ -6,7 +6,7 @@ QUnit.module("factorial function testing", () => {
     });
 
     QUnit.test("Zero as input", function(assert) {
-        assert.equal(factorial(0), 1, "Factorial of 0 is 1");
+        assert.equal(factorial(0), 1, "Zero number");
     });
 
     QUnit.test("Negative number", function(assert) {
