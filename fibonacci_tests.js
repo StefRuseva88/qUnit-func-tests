@@ -14,6 +14,6 @@ QUnit.module("fibonacci function testing", () => {
     });
 
     QUnit.test("Ten as parameter", function(assert) {
-        assert.deepEqual(fibonacci(10), [0, 1, 1, 2, 3, 5, 8, 13, 21, 34], "Fibonacci sequence with 10 terms");
+        assert.deepEqual(fibonacci(10), [0, 1, 1, 2, 3, 5, 8, 13, 21, 34], "10 as input");
     });
 })
