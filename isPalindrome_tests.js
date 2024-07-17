@@ -14,6 +14,6 @@ QUnit.module("isPalindrome function testing", () => {
     });
 
     QUnit.test("Empty string", function(assert) {
-        assert.notOk(isPalindrome(""), "Identifying empty string as not a palindrome");
+        assert.notOk(isPalindrome(""), "Empty string");
     });
 })
