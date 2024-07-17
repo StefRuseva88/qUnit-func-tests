@@ -10,6 +10,6 @@ QUnit.module("factorial function testing", () => {
     });
 
     QUnit.test("Negative number", function(assert) {
-        assert.equal(factorial(-3), 1, "Factorial of -1 is 1");
+        assert.equal(factorial(-3), 1, "Negative number");
     });
 })
