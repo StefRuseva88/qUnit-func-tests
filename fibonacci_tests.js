@@ -6,11 +6,11 @@ QUnit.module("fibonacci function testing", () => {
     });
 
     QUnit.test("One as parameter", function(assert) {
-        assert.deepEqual(fibonacci(1), [0], "Fibonacci sequence with 1 term");
+        assert.deepEqual(fibonacci(1), [0], "1 as input");
     });
 
     QUnit.test("Five as parameter", function(assert) {
-        assert.deepEqual(fibonacci(5), [0, 1, 1, 2, 3], "Fibonacci sequence with 5 terms");
+        assert.deepEqual(fibonacci(5), [0, 1, 1, 2, 3], "5 as input");
     });
 
     QUnit.test("Ten as parameter", function(assert) {
