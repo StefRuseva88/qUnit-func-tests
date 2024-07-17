@@ -2,7 +2,7 @@ const { factorial } = require("./test_functions.js")
 
 QUnit.module("factorial function testing", () => {
     QUnit.test("Positive number", function(assert) {
-        assert.equal(factorial(5), 120, "Factorial of 5 is 120");
+        assert.equal(factorial(5), 120, "Positive number");
     });
 
     QUnit.test("Zero as input", function(assert) {
