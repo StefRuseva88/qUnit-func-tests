@@ -5,8 +5,8 @@ QUnit.module("isPalindrome function testing", () => {
         assert.ok(isPalindrome("racecar"), "Single palindrome word");
     });
 
-    QUnit.test("Pasindrome sentence", function(assert) {
-        assert.ok(isPalindrome("A man, a plan, a canal, Panama!"), "Identifying 'A man, a plan, a canal, Panama!' as a palindrome");
+    QUnit.test("Palindrome sentence", function(assert) {
+        assert.ok(isPalindrome("A man, a plan, a canal, Panama!"), "Palindrome sentence");
     });
 
     QUnit.test("Not a palindrome word", function(assert) {
