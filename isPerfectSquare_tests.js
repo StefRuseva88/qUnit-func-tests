@@ -18,10 +18,10 @@ QUnit.module("isPerfectSquare function testing", () => {
     });
 
     QUnit.test("2 as parameter", function(assert) {
-        assert.notOk(isPerfectSquare(2), "Identifying 2 as not a perfect square");
+        assert.notOk(isPerfectSquare(2), "2 as parameter");
     });
 
     QUnit.test("15 as parameter", function(assert) {
-        assert.notOk(isPerfectSquare(15), "Identifying 15 as not a perfect square");
+        assert.notOk(isPerfectSquare(15), "15 as parameter");
     });
 })
