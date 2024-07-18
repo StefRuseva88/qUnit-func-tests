@@ -5,7 +5,7 @@ const { fetchData } = require("./async_test_functions.js")
         const data = await fetchData('https://www.zippopotam.us/bg/8000');
     
         assert.ok(data.hasOwnProperty('post code'), "Data contains 'post code'");
-        assert.equal(data['post code'], '8000', "'post code' is 8000");
+        assert.equal(data['post code'], '8000');
         assert.ok(data.hasOwnProperty('country'), "Data contains 'country'");
         assert.equal(data['country'], 'Bulgaria', "'country' is 'Bulgaria'");
         assert.ok(data.hasOwnProperty('country abbreviation'), "Data contains 'country abbreviation'");
