@@ -2,11 +2,11 @@ const { isPerfectSquare } = require("./test_functions.js");
 
 QUnit.module("isPerfectSquare function testing", () => {
     QUnit.test("1 as parameter", function(assert) {
-        assert.ok(isPerfectSquare(1), "Identifying 1 as a perfect square");
+        assert.ok(isPerfectSquare(1), "1 as parameter");
     });
 
     QUnit.test("4 as parameter", function(assert) {
-        assert.ok(isPerfectSquare(4), "Identifying 4 as a perfect square");
+        assert.ok(isPerfectSquare(4), "4 as parameter");
     });
 
     QUnit.test("9 as parameter", function(assert) {
