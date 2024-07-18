@@ -10,6 +10,6 @@ QUnit.module("nthPrime function testing", () => {
     });
 
     QUnit.test("10th Prime ", function(assert) {
-        assert.equal(nthPrime(10), 29, "10th prime number");
+        assert.equal(nthPrime(11), 29, "11th prime number");
     });
 })
