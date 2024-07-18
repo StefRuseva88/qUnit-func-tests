@@ -4,7 +4,6 @@ const { fetchData } = require("./async_test_functions.js")
     QUnit.test("Fetch Data Function Tests for Bulgarian Post Code", async function(assert) {
         const data = await fetchData('https://www.zippopotam.us/bg/8000');
     
-        // Check main object properties
         assert.ok(data.hasOwnProperty('post code'), "Data contains 'post code'");
         assert.equal(data['post code'], '8000', "'post code' is 8000");
         assert.ok(data.hasOwnProperty('country'), "Data contains 'country'");
@@ -12,7 +11,6 @@ const { fetchData } = require("./async_test_functions.js")
         assert.ok(data.hasOwnProperty('country abbreviation'), "Data contains 'country abbreviation'");
         assert.equal(data['country abbreviation'], 'BG', "'country abbreviation' is 'BG'");
     
-        // Check places array
         assert.ok(Array.isArray(data.places), "'places' is an array");
         assert.equal(data.places.length, 1, "'places' array has one element");
     
@@ -32,7 +30,7 @@ const { fetchData } = require("./async_test_functions.js")
     QUnit.test("Fetch Data Function Tests for Bulgarian Post Code with unexisting Post Code", async function(assert) {
         const data = await fetchData('https://www.zippopotam.us/bg/8000999');
     
-        assert.notOk(data); //falsy value
+        assert.notOk(data); 
         assert.true(data === undefined)
     });
 
