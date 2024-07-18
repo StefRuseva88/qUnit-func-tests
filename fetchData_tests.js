@@ -28,7 +28,7 @@ const { fetchData } = require("./async_test_functions.js")
     });
     
     QUnit.test("Fetch Data Function Tests for Bulgarian Post Code with unexisting Post Code", async function(assert) {
-        const data = await fetchData('https://www.zippopotam.us/bg/8000999');
+        const data = await fetchData('https://www.zippopotam.us/bg/8000123');
     
         assert.notOk(data); 
         assert.true(data === undefined)
