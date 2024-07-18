@@ -10,11 +10,11 @@ QUnit.module("isPerfectSquare function testing", () => {
     });
 
     QUnit.test("9 as parameter", function(assert) {
-        assert.ok(isPerfectSquare(9), "Identifying 9 as a perfect square");
+        assert.ok(isPerfectSquare(9), "9 as parameter");
     });
 
     QUnit.test("16 as parameter", function(assert) {
-        assert.ok(isPerfectSquare(16), "Identifying 16 as a perfect square");
+        assert.ok(isPerfectSquare(16), "16 as parameter");
     });
 
     QUnit.test("2 as parameter", function(assert) {
