@@ -16,7 +16,7 @@ const { fetchData } = require("./async_test_functions.js")
     
         const place = data.places[0];
         assert.ok(place.hasOwnProperty('place name'), "Place contains 'place name'");
-        assert.equal(place['place name'], 'Бургас / Burgas', "'place name' is 'Бургас / Burgas'");
+        assert.equal(place['place name'], 'Бургас / Burgas');
         assert.ok(place.hasOwnProperty('longitude'), "Place contains 'longitude'");
         assert.equal(place['longitude'], '27.4667', "'longitude' is '27.4667'");
         assert.ok(place.hasOwnProperty('state'), "Place contains 'state'");
