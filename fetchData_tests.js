@@ -12,7 +12,7 @@ const { fetchData } = require("./async_test_functions.js")
         assert.equal(data['country abbreviation'], 'BG');
     
         assert.ok(Array.isArray(data.places), "'places' is an array");
-        assert.equal(data.places.length, 1, "'places' array has one element");
+        assert.equal(data.places.length, 1);
     
         const place = data.places[0];
         assert.ok(place.hasOwnProperty('place name'), "Place contains 'place name'");
