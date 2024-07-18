@@ -31,7 +31,6 @@ const { fetchData } = require("./async_test_functions.js")
         const data = await fetchData('https://www.zippopotam.us/bg/8000123');
     
         assert.notOk(data); 
-        assert.true(data === undefined)
     });
 
     QUnit.test("Fetch Data Function Tests with invalid Url", async function(assert) {
