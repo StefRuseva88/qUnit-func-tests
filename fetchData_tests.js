@@ -2,7 +2,7 @@ const { fetchData } = require("./async_test_functions.js")
 
 
     QUnit.test("Fetch Data Function Tests for Bulgarian Post Code", async function(assert) {
-        const data = await fetchData('https://www.zippopotam.us/bg/8000'); // Replace with actual URL
+        const data = await fetchData('https://www.zippopotam.us/bg/8000');
     
         // Check main object properties
         assert.ok(data.hasOwnProperty('post code'), "Data contains 'post code'");
