@@ -27,14 +27,14 @@ const { fetchData } = require("./async_test_functions.js")
         assert.equal(place['latitude'], '42.5');
     });
     
-    QUnit.test("Fetch Data Function Tests for Bulgarian Post Code with unexisting Post Code", async function(assert) {
+    QUnit.test("Fetch Data Function Tests with invalid Post Code", async function(assert) {
         const data = await fetchData('https://www.zippopotam.us/bg/8000123');
     
         assert.notOk(data); 
         assert.true(data === undefined)
     });
 
-    QUnit.test("Fetch Data Function Tests with unexisting Url", async function(assert) {
+    QUnit.test("Fetch Data Function Tests with invalid Url", async function(assert) {
         const data = await fetchData('https://wwww.zippopotam.us/bg/8000');
     
         assert.equal(data, 'fetch failed')
