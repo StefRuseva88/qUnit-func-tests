@@ -18,7 +18,9 @@
 - **nthPrime Function**: Returns the nth prime number.
 - **pascalsTriangle Function**: Produces Pascal's Triangle up to a specified number of rows.
 - **isPerfectSquare Function**: Checks whether a number is a perfect square.
-
+- **fetchData Function**: Makes an API call to retrieve data from a specified URL and returns the response.
+- **fakeDelay Function**: Simulates a delay by returning a promise that resolves after a specified number of milliseconds.
+  
 ## Install QUnit
 To write tests we will install QUnit.
 
@@ -78,7 +80,14 @@ To write tests we will install QUnit.
 - Test 1: Verify that perfect squares (e.g., 16) return true.
 - Test 2: Ensure non-perfect square numbers return false.
 - Test 3: Handle edge cases like 0 and 1, which are both perfect squares.
-
+9. **fetchData Function** Tests
+- Test 1: Validate the response from the API endpoint https://www.zippopotam.us/bg/8000. Check that all keys and values match the expected output, including the properties inside the "places" array.
+- Test 2: Test for a non-existent postcode (https://www.zippopotam.us/bg/8000999) and ensure that the response is undefined.
+- Test 3: Handle an incorrect URL (https://wwww.zippopotam.us/bg/8000 with extra 'w') and check that an error or undefined is returned.
+10. **fakeDelay Function** Tests
+- Test 1: Ensure that the promise resolves after a 1000-millisecond delay. Use an assertion to verify the correct execution time.
+- Test 2: Test for various delay times (e.g., 500ms, 2000ms) to verify the function handles different intervals.
+- Test 3: Check for invalid inputs (e.g., negative numbers or non-numeric values) and confirm that the function returns an appropriate error or behavior.
 ## Contributing
 Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request.
 
