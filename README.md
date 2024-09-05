@@ -81,9 +81,9 @@ To write tests we will install QUnit.
 - Test 2: Ensure non-perfect square numbers return false.
 - Test 3: Handle edge cases like 0 and 1, which are both perfect squares.
 9. **fetchData Function** Tests
-- Test 1: Validate the response from the API endpoint https://www.zippopotam.us/bg/8000. Check that all keys and values match the expected output, including the properties inside the "places" array.
-- Test 2: Test for a non-existent postcode (https://www.zippopotam.us/bg/8000999) and ensure that the response is undefined.
-- Test 3: Handle an incorrect URL (https://wwww.zippopotam.us/bg/8000 with extra 'w') and check that an error or undefined is returned.
+- Test 1: Validate the response from the API endpoint. Check that all keys and values match the expected output, including the properties inside the "places" array.
+- Test 2: Test for a non-existent postcode and ensure that the response is undefined.
+- Test 3: Handle an incorrect URL and check that an error or undefined is returned.
 10. **fakeDelay Function** Tests
 - Test 1: Ensure that the promise resolves after a 1000-millisecond delay. Use an assertion to verify the correct execution time.
 - Test 2: Test for various delay times (e.g., 500ms, 2000ms) to verify the function handles different intervals.
