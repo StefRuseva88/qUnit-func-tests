@@ -7,93 +7,28 @@
 
 ### This is a test project for **Front-End Technologies** May 2024 Course @ SoftUni
 ---
-
-## Table of Contents
-1. [Create Functions for Testing](#create-functions-for-testing)
-2. [Export / Import Functions (CommonJS)](#export--import-functions-commonjs)
-3. [Install QUnit](#install-qunit)
-4. [Write Tests for All Functions](#write-tests-for-all-functions)
-   - [Test "sum" Function](#test-sum-function)
-   - [Test "isEven" Function](#test-iseven-function)
-   - [Test "factorial" Function](#test-factorial-function)
-   - [Test "isPalindrome" Function](#test-ispalindrome-function)
-   - [Test "fibonacci" Function](#test-fibonacci-function)
-   - [Test "nthPrime" Function](#test-nthprime-function)
-   - [Test "pascalsTriangle" Function](#test-pascalstriangle-function)
-   - [Test "isPerfectSquare" Function](#test-isperfectsquare-function)
-6. [Asynchronous Testing](#asynchronous-testing)
-   - [Test "fetchData" Function](#test-fetchdata-function)
-   - [Test "fakeDelay" Function](#test-fakedelay-function)
-7. [Contributing](#Contributing)
-8. [License](#License)
-9. [Contact](#Contact)
-
-## Create Functions for Testing
-
-Before we start testing with QUnit, we need to create a few functions to use as our test objects. Follow these steps to write your functions for testing:
-
-### Steps
-
-1. **Create your VS Code folder and file for functions:**
-   - First, create a folder named `function_and_tests`.
-   - Open this folder. Choose `File`, then `Open Folder` from the menu.
-   - Right-click on the `EXPLORER` tab and choose `New File…`.
-
-2. **Create a JS file and name it `test_functions.js`:**
-
-3. **Open the file and write the functions we will test later.**
    
 ### Functions
 
-- **Sum Function**: Returns the sum of two numbers.
-- **isEven Function**: Checks if a given number is even and returns a boolean.
-- **Factorial Function**: Calculates the factorial of a number using recursion.
-- **isPalindrome Function**: Checks if a string is a palindrome.
-- **Fibonacci Function**: Generates the Fibonacci sequence up to the specified number of terms.
-- **nthPrime Function**: Finds the nth prime number.
-- **pascalsTriangle Function**: Generates Pascal's triangle up to the specified number of rows.
-- **isPerfectSquare Function**: Checks if the given parameter number is a perfect square.
-
-## Export / Import Functions (CommonJS)
-
-Now that we have the functions ready for testing, we need to export them so we can import them into another file where we will write our tests.
-
-### Steps
-
-1. **Export Functions**: In `test_functions.js`, add the following code to export the functions:
-    ```javascript
-    module.exports = {
-        sum,
-        isEven,
-        factorial,
-        isPalindrome,
-        fibonacci,
-        nthPrime,
-        pascalsTriangle,
-        isPerfectSquare
-    };
-    ```
-
-2. **Import Functions**: Create a JS file named `sum_tests.js` and write the following code to import the `sum` function:
-    ```javascript
-    const { sum } = require('./test_functions');
-    ```
-
-3. **Check Import**: Test if the import is working properly by executing the code.
+- **Sum Function**: Adds two numbers and returns their sum.
+- **isEven Function**: Determines if a given number is even and returns true or false.
+- **Factorial Function**: Computes the factorial of a number recursively.
+- **isPalindrome Function**: Verifies whether a string is a palindrome.
+- **Fibonacci Function**: Generates the Fibonacci sequence up to a given number of terms.
+- **nthPrime Function**: Returns the nth prime number.
+- **pascalsTriangle Function**: Produces Pascal's Triangle up to a specified number of rows.
+- **isPerfectSquare Function**: Checks whether a number is a perfect square.
 
 ## Install QUnit
-
-To write tests, we need a test framework. We will install QUnit.
+To write tests we will install QUnit.
 
 ### Steps
-
 1. Open the Terminal in VS Code from `View` -> `Terminal`.
 2. Write the command `npm init -y`.
 3. After running the command, you should see the `package.json` file in the EXPLORER.
 4. Install QUnit through npm by executing the command `npm install --save-dev qunit`.
 
 ### Write Tests
-
 1. Create a QUnit module in `sum_tests.js`:
     ```javascript
     QUnit.module('Sum Function Tests', () => {
@@ -103,84 +38,46 @@ To write tests, we need a test framework. We will install QUnit.
     });
     ```
 
-2. Run Tests: Open `package.json` and change the value of the `test` sub-property to `"qunit"`. Then, execute the command `npm test sum_tests.js`.
-
-## Write Tests for All Functions
-
-### Test "sum" Function
-1. Create a new file named `sum_tests.js`.
-2. Import the `sum` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test sum_tests.js`.
-
-### Test "isEven" Function
-
-1. Create a new file named `isEven_tests.js`.
-2. Import the `isEven` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test isEven_tests.js`.
-
-### Test "factorial" Function
-
-1. Create a new file named `factorial_tests.js`.
-2. Import the `factorial` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test factorial_tests.js`.
-
-### Test "isPalindrome" Function
-
-1. Create a new file named `isPalindrome_tests.js`.
-2. Import the `isPalindrome` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test isPalindrome_tests.js`.
-
-### Test "fibonacci" Function
-
-1. Create a new file named `fibonacci_tests.js`.
-2. Import the `fibonacci` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test fibonacci_tests.js`.
-
-### Test "nthPrime" Function
-
-1. Create a new file named `nthPrime_tests.js`.
-2. Import the `nthPrime` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test nthPrime_tests.js`.
-
-### Test "pascalsTriangle" Function
-
-1. Create a new file named `pascalsTriangle_tests.js`.
-2. Import the `pascalsTriangle` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test pascalsTriangle_tests.js`.
-
-### Test "isPerfectSquare" Function
-
-1. Create a new file named `isPerfectSquare_tests.js`.
-2. Import the `isPerfectSquare` function.
-3. Write tests to check various cases.
-4. Run tests by executing `npm test isPerfectSquare_tests.js`.
-
-## Asynchronous Testing
-
-1. Create a file named `async_test_functions.js`.
-2. Write two async functions – one for asynchronous fetch and another to simulate an asynchronous delay.
-3. Export these functions.
-
-### Test "fetchData" Function
-
-1. Create a file named `fetchData_tests.js`.
-2. Import the `fetchData` function.
-3. Write tests for various cases using the Zippopotamus API.
-4. Execute the tests with the command `npm test fetchData_tests.js`.
-
-### Test "fakeDelay" Function
-
-1. Create a file named `fakeDelay_tests.js`.
-2. Import the `fakeDelay` function.
-3. Write a test with a delay of 1000 milliseconds.
-4. Execute the test with the command `npm test fakeDelay_tests.js`.
+2. Run the tests by modifying the test script in `package.json` to use QUnit:
+    ```javascript
+   "scripts": {
+    "test": "qunit"
+    }
+    ```
+## Tests for All Functions
+1. **Sum Function** Tests:
+- Test 1: Validate the sum of two positive numbers.
+- Test 2: Check for the sum of a positive and a negative number.
+- Test 3: Ensure the sum of two negative numbers works correctly.
+- Test 4: Handle edge cases, such as summing zero with another number.
+2. **isEven Function** Tests
+- Test 1: Verify if an even number returns `true`.
+- Test 2: Confirm that an odd number returns `false`.
+- Test 3: Check boundary values like 0 and negative even/odd numbers.
+3. **Factorial Function** Tests
+- Test 1: Compute the factorial of a positive integer (e.g., 5!).
+- Test 2: Ensure that the factorial of 0 returns 1.
+- Test 3: Test for large numbers to evaluate function performance and accuracy.
+4. **isPalindrome Function** Tests
+- Test 1: Confirm that a valid palindrome string (e.g., "racecar") returns true.
+- Test 2: Check for non-palindrome strings.
+- Test 3: Ensure the function is case-insensitive and handles punctuation.
+5. **Fibonacci Function** Tests
+- Test 1: Generate the first 5 terms of the Fibonacci sequence.
+- Test 2: Test edge cases like generating 1 or 0 terms.
+- Test 3: Check if the function handles large inputs efficiently.
+6. **nthPrime Function** Tests
+- Test 1: Return the 5th prime number (which should be 11).
+- Test 2: Handle boundary cases like the 1st prime number.
+- Test 3: Check performance for larger prime numbers.
+7. **pascalsTriangle Function** Tests
+- Test 1: Generate Pascal’s Triangle for 5 rows and check the structure.
+- Test 2: Ensure that invalid inputs (e.g., negative numbers) are handled gracefully.
+- Test 3: Test the function for a single row.
+8. **isPerfectSquare Function** Tests
+- Test 1: Verify that perfect squares (e.g., 16) return true.
+- Test 2: Ensure non-perfect square numbers return false.
+- Test 3: Handle edge cases like 0 and 1, which are both perfect squares.
 
 ## Contributing
 Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request.
