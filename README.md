@@ -86,8 +86,6 @@ To write tests we will install QUnit.
 - Test 1: Ensure that the promise resolves after a 1000-millisecond delay. Use an assertion to verify the correct execution time.
 - Test 2: Test for various delay times (e.g., 500ms, 2000ms) to verify the function handles different intervals.
 - Test 3: Check for invalid inputs (e.g., negative numbers or non-numeric values) and confirm that the function returns an appropriate error or behavior.
-## Contributing
-Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request.
 
 ## License
 This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
